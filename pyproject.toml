@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yara-grep"
-version = "0.4.0"
+version = "0.5.0"
 description = "CLI tool for rapid Yara rule prototyping"
 authors = ["Aled Mason <aledmason@microsoft.com>"]
 readme = "README.md"
@@ -16,4 +16,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
+ygrep = "yara_grep.cli:main"
+
+[project.scripts]
 ygrep = "yara_grep.cli:main"
